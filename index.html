@@ -14,15 +14,15 @@
     <body class="fullscreen">
         <div class="container">
             <div class="card">
-                <h4>Desenvolvido por Juan</h4>
                 <h1 class="title">Calculadora de Área</h1>
                 <p><b>Altura</b></p>
-                <input type="text" id="height"></input>
+                <input class="input" type="text" id="height"></input>
                 <p><b>Largura</b></p>
-                <input type="text" id="width"></input>
+                <input class="input" type="text" id="width"></input>
                 <button class="button" onClick="calcular()">Calcular</button>
-                <p>O valor da área é: <span id="result">0</span>m²</p>
+                <p>O valor da área é: <p class="result"><span id="result">0</span>m²</p></p>
             </div>
+            <h4 class="footer">Desenvolvido por Juan</h4>
         </div>
         <script src="js/main.js"></script>
     </body>
