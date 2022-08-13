@@ -44,10 +44,10 @@ html, .fullscreen {
     color: white;
     padding: 16px;
     background-color: #22334D;
-    max-width: 90%;
+    max-width: 80%;
     font-size: 3rem;
     border-radius: 28px;;
-    margin: 16px;
+    margin: 32px;
 }
 
 .result {
@@ -80,8 +80,6 @@ html, .fullscreen {
 }
 
 .footer {
-    position: fixed;
-    bottom: 0;
     margin-top: 16px;
     padding: 2%;
     background-color: #4A6FA5;
