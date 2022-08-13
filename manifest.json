@@ -1,6 +1,6 @@
 {
-    "name": "Minha primeira Progressive Web App",
-    "short_name": "Primeira PWA",
+    "name": "Calculadora de Área do Juan",
+    "short_name": "Calculadora de Área",
     "icons": [
         {
             "src": "images/pwa-icon-256.png",
@@ -16,8 +16,8 @@
     "lang": "pt-BR",
     "start_url": "/index.html",
     "display": "standalone",
-    "background_color": "white",
-    "theme_color": "white"
+    "background_color": "#151F2E",
+    "theme_color": "#151F2E"
 }
 
 
