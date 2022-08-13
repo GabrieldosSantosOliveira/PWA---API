@@ -48,6 +48,7 @@ html, .fullscreen {
     font-size: 2rem;
     border-radius: 28px;;
     margin: 32px;
+    text-align: center;
 }
 
 .result {
@@ -81,13 +82,12 @@ html, .fullscreen {
 
 .footer {
     margin-top: 16px;
-    padding: 2%;
     background-color: #4A6FA5;
     color: white;
     display: flex;
     flex-direction: column;
-    width: 98%;
-    height: 36px;
+    width: 100%;
+    height: 64px;
     align-items: center;
     justify-content: center;
     vertical-align: middle;
