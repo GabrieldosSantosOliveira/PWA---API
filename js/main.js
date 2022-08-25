@@ -6,11 +6,13 @@ window.onload = () => {
 };
 
 function calcular() {
-    let dado1 = document.getElementById("peso").value
-    let dado2 = document.getElementById("altura").value
-    let dado3 = document.getElementById("nome").value
-    let result = dado1 / dado2
+    let peso = document.getElementById("peso").value
+    let altura = document.getElementById("altura").value
+    let nome = document.getElementById("nome")
+    let result = peso / (altura * altura)
+    let resultado = document.getElementById("nome")
     document.getElementById("result").innerHTML = result
+    document.getElementById("resultado").innerHTML = resultado
 }
 
 

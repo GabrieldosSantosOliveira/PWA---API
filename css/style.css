@@ -97,6 +97,9 @@ html, body {
     justify-content: center;
     vertical-align: middle;
 }
+.nome{
+    color: azure;
+}
 
 .input {
     border: none;
