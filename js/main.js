@@ -6,9 +6,10 @@ window.onload = () => {
 };
 
 function calcular() {
-    let dado1 = document.getElementById("width").value
-    let dado2 = document.getElementById("height").value
-    let result = dado1 * dado2
+    let dado1 = document.getElementById("peso").value
+    let dado2 = document.getElementById("altura").value
+    let dado3 = document.getElementById("nome").value
+    let result = dado1 / dado2
     document.getElementById("result").innerHTML = result
 }
 

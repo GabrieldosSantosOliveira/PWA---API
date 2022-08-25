@@ -14,16 +14,25 @@
     <body class="fullscreen">
         <div class="container">
             <div class="card">
-                <h1 class="title">Calculadora de Área</h1>
-                <p><b>Altura</b></p>
-                <input class="input" type="text" id="height"></input>
-                <p><b>Largura</b></p>
-                <input class="input" type="text" id="width"></input>
+                <h1 class="title">Calculadora de IMC</h1>
+                Nome:<input class="input" type="text" id="nome"></input>
+                <p><b>Idade:</b></p>
+                <input class="input" type="text" id="idade"></input>
+                <form>
+                    <p><b>Sexo:</b></p>
+                    <INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op1"> Masculino
+                        <br>
+                    <INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op2"> Feminino
+                    </form>
+                <p><b>Altura:</b></p>
+                <input class="input" type="text" id="altura"></input>
+                <p class="peso"><b>Peso:</b></p>
+                <input class="input" type="text" id="peso"></input>
                 <button class="button" onClick="calcular()">Calcular</button>
-                <p>O valor da área é: <p class="result"><span id="result">0</span>m²</p></p>
+                <p>Seu IMC é: <p class="result" id="result">0</p></p>
             </div>
         </div>
-        <h4 class="footer">Desenvolvido por Juan</h4>
+        <h4 class="footer">Desenvolvido por Juan e Edivaldo</h4>
         <script src="js/main.js"></script>
     </body>
 </html>
