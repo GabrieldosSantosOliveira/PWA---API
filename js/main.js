@@ -8,7 +8,7 @@ window.onload = () => {
 function calcular() {
     let peso = document.getElementById("peso").value
     let altura = document.getElementById("altura").value
-    let nome = document.getElementById("nome").value
+    let nome = document.getElementById("nome").value = " ";
     let result = peso / (altura * altura)
     let resultado = document.getElementById("nome")
     document.getElementById("result").innerHTML = result
