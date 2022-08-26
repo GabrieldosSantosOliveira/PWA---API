@@ -14,26 +14,46 @@
     <body class="fullscreen">
         <div class="container">
             <div class="card">
+
                 <h1 class="title">Calculadora de IMC</h1>
-                Nome:<input class="input" type="text" id="nome"></input>
-                <p><b>Idade:</b></p>
+
+                <div class="first-input">
+               <label><b>Nome:</b></label>
+               <input class="input" type="text" name="nome" id="nome"></input>
+                </div>
+
+                <div class="second-input">
+                <label><b>Idade:</b></label>
                 <input class="input" type="text" id="idade"></input>
-                <form>
-                    <p><b>Sexo:</b></p>
-                    <INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op1"> Masculino
+                </div>
+
+                <div class="first-option">
+                 <label><b>Sexo:</b></label>
+                 <select name="sexo" id="sexo">
+                 <option TYPE="masculino" NAME="masculino" VALUE="masculino"> Masculino</option>
                         <br>
-                    <INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op2"> Feminino
-                    </form>
-                <p><b>Altura:</b></p>
-                <input class="input" type="text" id="altura" placeholder="Digite sua altura(Ex:1.74)"></input>
-                <p class="peso"><b>Peso:</b></p>
-                <input class="input" type="text" id="peso" placeholder="Digite seu peso(Ex: 65)"></input>
+                 <option NAME="feminino" VALUE="feminino"> Feminino</option>
+                 </select>
+                </div>
+
+                <div class="first-altura"></div>
+                <label><b>Altura:</b></label>
+                <input class="input" type="text" id="altura" placeholder="Digite sua altura"></input>
+                </div>
+
+                <div class="peso">
+                <label><b>Peso:</b></label>
+                <input class="input" type="text" id="peso" placeholder="Digite seu peso"></input>
+                <br>
                 <button class="button" onClick="calcular()">Calcular</button>
-                <p>Seu IMC é: <p class="result" id="result">0</p></p>
+                <div class="final">
+                <p>Seu IMC é: <pid="result">0</p></p> 
+
                 <p>Nome: <p class="nome" id="resultado"></p></p>
+                </div>
+            </div>
             </div>
         </div>
-        <h4 class="footer">Desenvolvido por Juan e Edivaldo</h4>
         <script src="js/main.js"></script>
     </body>
 </html>
