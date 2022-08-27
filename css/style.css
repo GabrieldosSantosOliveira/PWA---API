@@ -82,24 +82,25 @@ html, body {
 }.button:active{
     background-color: #0F418C;
 }
-.nome{
-    color: azure;
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    margin-top: 16px;
+    background-color: #4A6FA5;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
 }
 
 .input {
     border: none;
-    border-radius: 14px;
-}
-.second-input{
-    margin-top: 25px;
-}
-.first-option{
-    margin-top: 20px;
-    margin-left: 100px;
-}
-.peso{
-    margin-top: 20px;
-    margin-left: 100px;
+    border-radius: 16px;
 }
 .final{
     color: white;
@@ -108,14 +109,6 @@ html, body {
     max-width: 80%;
     font-size: 2rem;
     border-radius: 28px;;
-    margin: 32px;
-    margin-left: -25px;
-}
-.nome_display{
-    display: flex;
-}
-.option{
-    margin-left: 10px;
-    width: 222px;
-    border-radius: 14px;
+    margin: 80px;
+    width: 300px;
 }

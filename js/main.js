@@ -11,17 +11,27 @@ function calcular() {
     let nome = document.getElementById("nome").value;
     let idade = document.getElementById("idade").value;
     let sexo = document.getElementById("sexo").value;
-    let sexo_femi = document.getElementById("sexo_femi").value;
 
     let result = peso / (altura * altura)
     document.getElementById("result").innerHTML = Math.floor(result);
     imprimir_nome.textContent = nome;
-    imprimir_idade.textContent = idade;
+    imprimir_idade.textContent = idade + " anos";
     imprimir_sexo.textContent = sexo;
-    imprimir_sexo_femi.textContent = sexo_femi;
+    imprimir_altura.textContent = altura;
+    imprimir_peso.textContent = peso;
 
-    if(result > 18){
-        document.getElementById("msg").innerHTML = "gordo";
+    if(result < 18.5){
+        document.getElementById("msg").innerHTML = "Abaixo do peso normal";
+    }else if(result > 18.5 & result < 24.9){
+        document.getElementById("msg").innerHTML = "Peso Normal";
+    }else if(result > 25.0 & result < 29.9){
+        document.getElementById("msg").innerHTML = "Excesso de Peso";
+    }else if(result > 30.0 & result <= 34.9){
+        document.getElementById("msg").innerHTML = "Obesidade classe 1";
+    }else if(result >= 35.0 & result <= 39.9){
+        document.getElementById("msg").innerHTML = "Obesidade classe 2";
+    }else if(result >= 40.0){
+        document.getElementById("msg").innerHTML = "Obesidade classe 3";
     }
 }
 

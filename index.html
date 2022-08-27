@@ -2,7 +2,7 @@
 <html lang="pt">
     <head>
         <meta charset="utf-8" />
-        <title>Calculadora de Área do Juan</title>
+        <title>Calculadora de IMC</title>
         <link rel="apple-touch-icon" href="images/pwa-icon-256.png" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="manifest" href="/manifest.json" />
@@ -14,48 +14,30 @@
     <body class="fullscreen">
         <div class="container">
             <div class="card">
-
                 <h1 class="title">Calculadora de IMC</h1>
-
-                <div class="first-input">
-               <label><b>Nome:</b></label>
-               <input class="input" type="text" name="nome" id="nome"></input>
-                </div>
-
-                <div class="second-input">
-                <label><b>Idade:</b></label>
+                <p><b>Nome:</b></p>
+                <input class="input" type="text" id="nome"></input>
+                <p><b>Idade:</b></p>
                 <input class="input" type="text" id="idade"></input>
-                </div>
-
-                <div class="first-option">
-                 <label><b>Sexo:</b></label>
-                 <select name="sexo" class="option">
-                 <option TYPE="masculino" NAME="masculino" VALUE="masculino" id="sexo"> Masculino</option>
-                        <br>
-                 <option NAME="feminino" VALUE="feminino" id="sexo_femi"> Feminino</option>
-                 </select>
-                </div>
-
-                <div class="first-altura"></div>
-                <label><b>Altura:</b></label>
-                <input class="input" type="text" id="altura" placeholder="Digite sua altura"></input>
-                </div>
-
-                <div class="peso">
-                <label><b>Peso:</b></label>
-                <input class="input" type="text" id="peso" placeholder="Digite seu peso"></input>
-                <br>
+                <p><b>Sexo:</b></p>
+                <select name="sexo" id="sexo">
+                <option value="masculino" name="masculino">Masculino</option>
+                <option value="feminino" name="feminino">Feminino</option>
+                </select>
+                <p><b>Altura:</b></p>
+                <input class="input" type="text" id="altura"></input>
+                <p><b>Peso:</b></p>
+                <input class="input" type="text" id="peso"></input>
                 <button class="button" onClick="calcular()">Calcular</button>
                 <div class="final">
-                    <div class="nome_display">
-                <p>Nome: <p class="nome" id="imprimir_nome"></p></p>
-            </div>
-                <p>Idade: <p class="idade" id="imprimir_idade"></p>
-                <p>SExo: <p class="idade" id="imprimir_sexo"></p>
-                <p>Seu IMC é: <p id="result">0</p></p> 
-                  <h1 id="msg"></h1>
+                    <p>Nome:<p class="nome" id="imprimir_nome"></p></p>
+                    <p>Idade:<p class="idade" id="imprimir_idade"></p></p>
+                    <p>Sexo:<p class="sexo" id="imprimir_sexo"></p></p>
+                    <p>Altura:<p class="altura" id="imprimir_altura"></p></p>
+                    <p>Peso:<p class="largura" id="imprimir_peso"></p></p>
+                    <p>Seu IMC é: <p class="result" id="result">0</p></p>
+                    <h2 class="msg" id="msg"></h2>
                 </div>
-            </div>
             </div>
         </div>
         <script src="js/main.js"></script>
