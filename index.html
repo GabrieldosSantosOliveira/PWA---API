@@ -29,10 +29,10 @@
 
                 <div class="first-option">
                  <label><b>Sexo:</b></label>
-                 <select name="sexo" id="sexo">
-                 <option TYPE="masculino" NAME="masculino" VALUE="masculino"> Masculino</option>
+                 <select name="sexo" class="option">
+                 <option TYPE="masculino" NAME="masculino" VALUE="masculino" id="sexo"> Masculino</option>
                         <br>
-                 <option NAME="feminino" VALUE="feminino"> Feminino</option>
+                 <option NAME="feminino" VALUE="feminino" id="sexo_femi"> Feminino</option>
                  </select>
                 </div>
 
@@ -47,9 +47,13 @@
                 <br>
                 <button class="button" onClick="calcular()">Calcular</button>
                 <div class="final">
+                    <div class="nome_display">
+                <p>Nome: <p class="nome" id="imprimir_nome"></p></p>
+            </div>
+                <p>Idade: <p class="idade" id="imprimir_idade"></p>
+                <p>SExo: <p class="idade" id="imprimir_sexo"></p>
                 <p>Seu IMC é: <p id="result">0</p></p> 
-
-                <p>Nome: <p class="nome" id="nome"></p></p>
+                  <h1 id="msg"></h1>
                 </div>
             </div>
             </div>

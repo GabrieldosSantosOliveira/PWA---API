@@ -95,6 +95,7 @@ html, body {
 }
 .first-option{
     margin-top: 20px;
+    margin-left: 100px;
 }
 .peso{
     margin-top: 20px;
@@ -108,5 +109,13 @@ html, body {
     font-size: 2rem;
     border-radius: 28px;;
     margin: 32px;
-    text-align: center;
+    margin-left: -25px;
+}
+.nome_display{
+    display: flex;
+}
+.option{
+    margin-left: 10px;
+    width: 222px;
+    border-radius: 14px;
 }
