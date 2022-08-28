@@ -58,13 +58,14 @@ html, body {
     color: white;
     padding: 12px;
     background-color: #1454B5;
-    font-size: 2rem;
+    font-size: 1rem;
     border-radius: 16px;
-    margin: 16px;
+    margin: 10px;
 }
 
 #result {
     font-size: 2rem;
+    width: 80px;
 }
 
 .button {
@@ -82,7 +83,16 @@ html, body {
 }.button:active{
     background-color: #0F418C;
 }
-
+.sexo{
+    width: 220px;
+    border-radius: 16px;
+}
+.masculino{
+    text-align: center;
+}
+.feminino{
+    text-align: center;
+}
 .footer {
     position: fixed;
     bottom: 0;
@@ -109,6 +119,13 @@ html, body {
     max-width: 80%;
     font-size: 2rem;
     border-radius: 28px;;
-    margin: 80px;
+    margin: 70px;
     width: 300px;
+    margin-top: 17px;
+}
+.first-button{
+    display: flex;
+}
+#button{
+    margin-top: -60px;
 }

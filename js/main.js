@@ -14,11 +14,11 @@ function calcular() {
 
     let result = peso / (altura * altura)
     document.getElementById("result").innerHTML = Math.floor(result);
-    imprimir_nome.textContent = nome;
-    imprimir_idade.textContent = idade + " anos";
-    imprimir_sexo.textContent = sexo;
-    imprimir_altura.textContent = altura;
-    imprimir_peso.textContent = peso;
+    imprimir_nome.textContent = "Nome: " + nome;
+    imprimir_idade.textContent = "Idade: " + idade + " anos";
+    imprimir_sexo.textContent = "Sexo: " + sexo;
+    imprimir_altura.textContent = "Altura: " + altura + " cm";
+    imprimir_peso.textContent = "Peso: " + peso + " Kg";
 
     if(result < 18.5){
         document.getElementById("msg").innerHTML = "Abaixo do peso normal";
@@ -34,6 +34,22 @@ function calcular() {
         document.getElementById("msg").innerHTML = "Obesidade classe 3";
     }
 }
+function Limpar(){
+    let peso = document.getElementById("peso").value = " ";
+    let altura = document.getElementById("altura").value = " ";
+    let nome = document.getElementById("nome").value = " ";
+    let idade = document.getElementById("idade").value = " ";
+    let sexo = document.getElementById("sexo").value = " ";
+}
+function PDF() {
+    var pegar_dados = document.getElementById("final").innerHTML;
 
-
-
+    var janela = window.open('', '', 'width=800, height=600');
+    janela.document.write('<html><head>');
+    janela.document.write('<title>PDF</title>');
+    janela.document.write('<body>');
+    janela.document.write(pegar_dados);
+    janela.document.write('</body></html>');
+    janela.document.close();
+    janela.print();
+}

@@ -15,29 +15,40 @@
         <div class="container">
             <div class="card">
                 <h1 class="title">Calculadora de IMC</h1>
+
                 <p><b>Nome:</b></p>
                 <input class="input" type="text" id="nome"></input>
+
                 <p><b>Idade:</b></p>
                 <input class="input" type="text" id="idade"></input>
+
                 <p><b>Sexo:</b></p>
-                <select name="sexo" id="sexo">
-                <option value="masculino" name="masculino">Masculino</option>
-                <option value="feminino" name="feminino">Feminino</option>
+                <select name="sexo" id="sexo" class="sexo">
+                <option value="Masculino" name="Masculino" class="masculino">Masculino</option>
+                <option value="Feminino" name="Feminino" class="feminino">Feminino</option>
                 </select>
+
                 <p><b>Altura:</b></p>
                 <input class="input" type="text" id="altura"></input>
+
                 <p><b>Peso:</b></p>
                 <input class="input" type="text" id="peso"></input>
+
+                <div class="first-button">
                 <button class="button" onClick="calcular()">Calcular</button>
-                <div class="final">
-                    <p>Nome:<p class="nome" id="imprimir_nome"></p></p>
-                    <p>Idade:<p class="idade" id="imprimir_idade"></p></p>
-                    <p>Sexo:<p class="sexo" id="imprimir_sexo"></p></p>
-                    <p>Altura:<p class="altura" id="imprimir_altura"></p></p>
-                    <p>Peso:<p class="largura" id="imprimir_peso"></p></p>
-                    <p>Seu IMC é: <p class="result" id="result">0</p></p>
+                <button class="button"  value="limpar" onclick="Limpar()">Limpar</button>
+                </div>
+                <div class="final" id="final">
+                    <p class="nome" id="imprimir_nome"></p></p>
+                    <p class="idade" id="imprimir_idade"></p></p>
+                    <p class="sexo" id="imprimir_sexo"></p></p>
+                    <p class="altura" id="imprimir_altura"></p></p>
+                    <p class="largura" id="imprimir_peso"></p></p>
+                    
+                    <p>Seu IMC é: </p><p class="result" id="result"></p></p>
                     <h2 class="msg" id="msg"></h2>
                 </div>
+                <button type="button" value="Imprimir" onclick="PDF()" class="button" id="button">Imprimir em PDF</button>
             </div>
         </div>
         <script src="js/main.js"></script>
