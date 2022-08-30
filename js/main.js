@@ -35,11 +35,12 @@ function calcular() {
     }
 }
 function Limpar(){
-    let peso = document.getElementById("peso").value = " ";
-    let altura = document.getElementById("altura").value = " ";
-    let nome = document.getElementById("nome").value = " ";
-    let idade = document.getElementById("idade").value = " ";
-    let sexo = document.getElementById("sexo").value = " ";
+    let peso = document.getElementById("peso").value = "";
+    let altura = document.getElementById("altura").value = "";
+    let nome = document.getElementById("nome").value = "";
+    let idade = document.getElementById("idade").value = "";
+    let sexo = document.getElementById("sexo").value = "";
+    result.innerHTML = "";
 }
 function PDF() {
     var pegar_dados = document.getElementById("final").innerHTML;

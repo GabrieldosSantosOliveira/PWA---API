@@ -17,10 +17,10 @@
                 <h1 class="title">Calculadora de IMC</h1>
 
                 <p><b>Nome:</b></p>
-                <input class="input" type="text" id="nome"></input>
+                <input class="input" type="text" id="nome" placeholder="Digite seu Nome"></input>
 
                 <p><b>Idade:</b></p>
-                <input class="input" type="text" id="idade"></input>
+                <input class="input" type="text" id="idade" placeholder="Ex: 15"></input>
 
                 <p><b>Sexo:</b></p>
                 <select name="sexo" id="sexo" class="sexo">
@@ -29,10 +29,10 @@
                 </select>
 
                 <p><b>Altura:</b></p>
-                <input class="input" type="text" id="altura"></input>
+                <input class="input" type="text" id="altura" placeholder="Ex: 1.74"></input>
 
                 <p><b>Peso:</b></p>
-                <input class="input" type="text" id="peso"></input>
+                <input class="input" type="text" id="peso" placeholder="Ex: 65"></input>
 
                 <div class="first-button">
                 <button class="button" onClick="calcular()">Calcular</button>
@@ -45,12 +45,13 @@
                     <p class="altura" id="imprimir_altura"></p></p>
                     <p class="largura" id="imprimir_peso"></p></p>
                     
-                    <p>Seu IMC é: </p><p class="result" id="result"></p></p>
+                    <p class="result" id="result">--</p>
                     <h2 class="msg" id="msg"></h2>
                 </div>
                 <button type="button" value="Imprimir" onclick="PDF()" class="button" id="button">Imprimir em PDF</button>
             </div>
         </div>
+        <footer class="footer">Edivaldo e Juan</footer>
         <script src="js/main.js"></script>
     </body>
 </html>

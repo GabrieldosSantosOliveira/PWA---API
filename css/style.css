@@ -60,12 +60,14 @@ html, body {
     background-color: #1454B5;
     font-size: 1rem;
     border-radius: 16px;
-    margin: 10px;
+    margin: 15px;
+    margin-left: 40px;
 }
 
 #result {
     font-size: 2rem;
     width: 80px;
+    margin-left: 90px;
 }
 
 .button {
@@ -96,7 +98,7 @@ html, body {
 .footer {
     position: fixed;
     bottom: 0;
-    margin-top: 16px;
+    margin-top: 14px;
     background-color: #4A6FA5;
     color: white;
     display: flex;
@@ -111,6 +113,7 @@ html, body {
 .input {
     border: none;
     border-radius: 16px;
+    padding-left: 12px;
 }
 .final{
     color: white;
