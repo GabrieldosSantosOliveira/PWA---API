@@ -1,143 +1,124 @@
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+/*#002642 azul
+#840032 vermelho
+#E5DADA creme
+#02040F preto */
 
-*{
-    font-family: "Questrial";
-    margin: 0 auto;
-    padding: 0;
-    font-size: 20px;
-}
-
-html, .fullscreen {
-    color: white;
-    background-color: #151F2E; 
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 100%;
-}
-
-.container {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    margin-bottom: 48px;
-}
-
-.card {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-}
-
-.card p {
-    margin: 12px;
-}
-
-.title {
-    color: white;
-    padding: 16px;
-    background-color: #22334D;
-    max-width: 80%;
-    font-size: 2rem;
-    border-radius: 28px;;
-    margin: 32px;
-    text-align: center;
-}
-
-.result {
-    color: white;
-    padding: 12px;
-    background-color: #1454B5;
-    font-size: 1rem;
-    border-radius: 16px;
-    margin: 15px;
-    margin-left: 90px;
-    margin-top: 70px;
-}
-
-#result {
-    font-size: 1rem;
-    width: 80px;
-    margin-left: 10px;
-    margin-top: -20px;
-}
-
-.button {
-    font-weight: bold;
-    margin: 12px;
-    margin-top: 24px;
-    padding: 10px;
-    border: none;
-    background-color: #1454B5;
-    border-radius: 16px;
-    color: white
-} .button:hover{
-    padding: 6px;
-    border: 4px solid #0F418C;
-}.button:active{
-    background-color: #0F418C;
-}
-.sexo{
-    width: 220px;
-    border-radius: 16px;
-    padding: 6px 8px 6px 8px;
-}
-.masculino{
-    text-align: center;
-}
-.feminino{
-    text-align: center;
-}
-.footer {
-    position: fixed;
-    bottom: 0;
-    margin-top: 14px;
-    background-color: #4A6FA5;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 48px;
-    align-items: center;
-    justify-content: center;
-    vertical-align: middle;
-}
-
-.input {
-    border: none;
-    border-radius: 16px;
-    padding: 6px 8px 6px 8px;
-}
-.final{
-    color: white;
-    padding: 16px;
-    background-color: #22334D;
-    max-width: 80%;
-    font-size: 2rem;
-    border-radius: 28px;;
-    margin: 70px;
-    width: 300px;
-    margin-top: 17px;
-}
-.first-button{
-    display: flex;
-}
-#button{
-    margin-top: -60px;
-}
-.msg{
-    margin-left: 14px;
-}
-#imprimir_sexo{
-    margin-left: 3px;
-}
+body{
+    background-color: #002642;
+    }
+    
+    header{
+        margin:4%;
+        display: flex;
+        gap:100%;
+    }
+    
+    .header-title{
+        position: absolute;
+    }
+    
+    h1{
+        color: aliceblue;
+    }
+    
+    span{
+        color: red;
+    }
+    
+    .audio{
+        margin-top: 18px;
+        margin-left: 18px;
+        width: 200px;
+    }
+    main{
+        color: #E5DADA;
+        text-align: center;
+        margin-top: 10%;
+        width: 100%;
+    }
+    .main{
+        display: flex;
+        column-gap: 10px;
+    }
+    
+    .button{
+        padding: 12px 12px 12px 12px;
+        background-color: #10344e;
+        color: azure;
+        border: 1px solid #1456ba;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    
+    .footer-text{
+        font-size: 20px;
+    }
+    
+    /* Localização */
+    
+    .container-localização {
+        box-sizing: border-box;
+        max-width: 100%;
+        width: 100%;
+        padding: 1em;
+        background-color: rgb(64, 93, 119);
+        text-align: center;
+        margin-top: 40%;
+        height: 580px;
+    }
+    
+    .titulo{
+        text-align: center;
+        color: rgb(241, 241, 245);
+        font-size: 2em;
+    }
+    
+    .titulo2{
+        color: rgb(240, 235, 235);
+    }
+    .conteudo{
+        margin: 1.2em 0;
+    }
+    
+    
+    .cabecalhoConteudo{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        color: #333;
+    }
+    
+    .rodape{
+        text-align: center;
+        border-radius: 5%;
+    }
+    
+    .conteudoLocalizacao{
+     height: 50px;
+    }
+    
+    .mapouter{
+       text-align: center;
+    }
+    
+    #mapa{
+        height: 220px;
+        width: 50%;
+    }
+    .botao{
+        background-color: rgba(69, 71, 163, 0.3);
+        box-shadow: 5px 5px 5px rgba(153, 154, 225, 0.3);
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        width: 60%;
+        border-radius: 5px;
+    }
+    
+    .menu-produtos{
+        background-color: green;
+        color: white
+    }

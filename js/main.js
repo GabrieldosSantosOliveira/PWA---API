@@ -5,52 +5,61 @@ window.onload = () => {
     }
 };
 
-function calcular() {
-    let peso = document.getElementById("peso").value;
-    let altura = document.getElementById("altura").value;
-    let nome = document.getElementById("nome").value;
-    let idade = document.getElementById("idade").value;
-    let sexo = document.getElementById("sexo").value;
+let api = "https://handsome-spacesuit-bass.cyclic.app/listar-json";
+let url = `https://handsome-spacesuit-bass.cyclic.app/listar-json/${api}`;
+const main = document.querySelector('main');
 
-    let result = peso / (altura * altura)
-    document.getElementById("result").innerHTML = Math.floor(result);
-    imprimir_nome.textContent = "Nome: " + nome;
-    imprimir_idade.textContent = "Idade: " + idade + " anos";
-    imprimir_sexo.textContent = "Sexo: " + sexo;
-    imprimir_altura.textContent = "Altura: " + altura + " cm";
-    imprimir_peso.textContent = "Peso: " + peso + " Kg";
+async function APICons(){
+    const res = await fetch(url);
+    const data = await res.json();
+    main.innerHTML = data.articles.map(createArticle).join('\n');
+}
+function createArticle(article){
+    return `
+      <div class="article">
+      <a href="${article.id}" target="_blank">
+         <img src="${article.imagem}"/>
+         <h2>${article.descri}</h2>
+         <p>${article.preco}</p>
+       </a>
+   </div>
+    `
+}
 
-    if(result < 18.5){
-        document.getElementById("msg").innerHTML = "Abaixo do peso normal";
-    }else if(result > 18.5 & result < 24.9){
-        document.getElementById("msg").innerHTML = "Peso Normal";
-    }else if(result > 25.0 & result < 29.9){
-        document.getElementById("msg").innerHTML = "Excesso de Peso";
-    }else if(result > 30.0 & result <= 34.9){
-        document.getElementById("msg").innerHTML = "Obesidade classe 1";
-    }else if(result >= 35.0 & result <= 39.9){
-        document.getElementById("msg").innerHTML = "Obesidade classe 2";
-    }else if(result >= 40.0){
-        document.getElementById("msg").innerHTML = "Obesidade classe 3";
+let posicaoInicial;//variavel para capturar a posicao
+const capturarLocalizacao = document.getElementById('localizacao');
+const latitude = document.getElementById('latitude');
+const longitude = document.getElementById('longitude');
+const map = document.getElementById('mapa');
+
+const sucesso = (posicao) => {//callback de sucesso para captura da posicao
+    posicaoInicial = posicao;
+    latitude.innerHTML = posicaoInicial.coords.latitude;
+    longitude.innerHTML = posicaoInicial.coords.longitude;
+};
+
+const erro = (error) => {//callback de error (falha para captura de localizacao)
+    let errorMessage;
+    switch(error.code){
+        case 0:
+            errorMessage = "Erro desconhecido"
+        break;
+        case 1:
+            errorMessage = "Permissão negada!"
+        break;
+        case 2:
+            errorMessage = "Captura de posição indisponível!"
+        break;
+        case 3:
+            errorMessage = "Tempo de solicitação excedido!" 
+        break;
     }
-}
-function Limpar(){
-    let peso = document.getElementById("peso").value = "";
-    let altura = document.getElementById("altura").value = "";
-    let nome = document.getElementById("nome").value = "";
-    let idade = document.getElementById("idade").value = "";
-    let sexo = document.getElementById("sexo").value = "";
-    result.innerHTML = "";
-}
-function PDF() {
-    var pegar_dados = document.getElementById("final").innerHTML;
+    console.log('Ocorreu um erro: ' + errorMessage);
+};
 
-    var janela = window.open('', '', 'width=800, height=600');
-    janela.document.write('<html><head>');
-    janela.document.write('<title>PDF</title>');
-    janela.document.write('<body>');
-    janela.document.write(pegar_dados);
-    janela.document.write('</body></html>');
-    janela.document.close();
-    janela.print();
-}
+capturarLocalizacao.addEventListener('click', () => {
+    navigator.geolocation.getCurrentPosition(sucesso, erro);
+
+    map.src = "http://maps.google.com/maps?q="+ posicaoInicial.coords.latitude+"," + posicaoInicial.coords.longitude +"&z=16&output=embed"
+
+});

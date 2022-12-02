@@ -1,6 +1,6 @@
 {
-    "name": "Calculadora de Área do Juan",
-    "short_name": "Calculadora de Área",
+    "name": "pwa-api",
+    "short_name": "pwa-consome",
     "icons": [
         {
             "src": "images/pwa-icon-256.png",

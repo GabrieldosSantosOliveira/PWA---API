@@ -1,4 +1,4 @@
-let cacheName = "my-first-pwa";
+let cacheName = "api-my";
 let filesToCache = ["/", "/index.html", 
                 "/css/style.css", "/js/main.js"];
 
