@@ -10,7 +10,7 @@
   "author": "Edivaldo e Carlos",
   "license": "ISC",
   "dependencies": {
-    "serve": "^13.0.4"
+    "serve": "^14.2.1"
   }
 }
 
